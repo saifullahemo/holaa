@@ -14,154 +14,267 @@
 </head>
 
 <body>
-    <!-- <section id="navbar-top"> -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <div class="container-fluid">
-                <img src="icon.png" alt="logo" style="width:50px;">
-                <a class="navbar-brand" href="#">Holaa</a>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="icon.png" alt="logo" style="width:50px;">
+            <a class="navbar-brand" href="#">Holaa</a>
+
+
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                   
+                    <li class="nav-link active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" aria-current="page" href="#services">Services</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" aria-current="page" href="#features">Portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" aria-current="page" href="#price">Pricing</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" aria-current="page" href="#">Team</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
                 
-
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="navbar-collapse collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-link active">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-link">
-                            <a class="nav-link" aria-current="page" href="#services">Services</a>
-                        </li>
-                        <li class="nav-link">
-                            <a class="nav-link" aria-current="page" href="#features">Portfolio</a>
-                        </li>
-                        <li class="nav-link">
-                            <a class="nav-link" aria-current="page" href="#price">Pricing</a>
-                        </li>
-                        <li class="nav-link">
-                            <a class="nav-link" aria-current="page" href="#about">About</a>
-                        </li>
-                        <li class="nav-link">
-                            <a class="nav-link" aria-current="page" href="#">Team</a>
-                        </li>
-                        <li class="nav-link active">
-                            <a class="nav-link" aria-current="page" href="#">Contact</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- <div class="container-fluid px-0">
-            <img class="img-fluid hero-image mt-5" src="pic1.jpg" alt="">
-        </div> -->
-        <!-- </section> -->
-        <section class="section" >
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to = "1"></li>
-                    <li data-target="#demo" data-slide-to = "2"></li>
-                    <li data-target="#demo" data-slide-to = "2"></li>
-
                 </ul>
+        
+                <button class="btn btn-primary btn-lg" onclick="javascript:$('#myModal').modal('show');">SignIn / Register</button>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="img-fluid hero-image " src="pic1.jpg" alt=""  height="200">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="img-fluid hero-image " src="pic2.jpg" alt=""  height="200">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="img-fluid hero-image " src="pic3.jpg" alt=""  height="200">
-                    </div>
+            
+        </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Slider Section -->
+    <section class="section">
+        <div class="carousel slide" data-ride="carousel" id="demo">
+
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class=" img-fluid hero-image" src="pic1.jpg" alt="">
                 </div>
-
-                <a href="#demo" class="carousel-control-prev" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-
-                <a href="#demo" class="carousel-control-next" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-        </section>
-
-        <section class="section1" id="services">
-            <div class="container-fluid">
-
-                <div class="section-title text-center pb-10">
-                    <h1 class="pt-3">Our Services</h1>
-                    <P>Stop wasting time and money designing and managing a website that doesn’t get results. Happiness
-                        guaranteed!</P>
+                <div class="carousel-item">
+                    <img class="img-fluid hero-image" src="pic2.jpg" alt="">
                 </div>
-
-                <div class="cent row ">
-
-                    <div class="sec col-sm-12 col-md-4 col-lg-3">
-
-                        <div class="row">
-
-                            <div class="text center col-6">
-                                <h3 class="mt-5">Graphics design</h3>
-                            </div>
-                            <div class="col-6 ">
-                                <img src="gd.png" alt="" class="image1">
-                            </div>
-                        </div>
-                        <p>Short description for the ones who look for something new. Short description for the ones who
-                            look for something new.</p>
-
-                        <a class="btn btn-secondary mb-3" role="button">Details</a>
-                    </div>
-
-                    <div class="sec col-sm-12 col-md-4 col-lg-3">
-
-                        <div class="row">
-
-                            <div class="col-6">
-                                <h3 class="mt-5">Website Design
-                                </h3>
-                            </div>
-                            <div class="col-6">
-                                <img src="gd.png" alt="" class="image1">
-                            </div>
-                        </div>
-                        <p>Short description for the ones who look for something new. Short description for the ones who
-                            look for something new.</p>
-                        <a class="btn btn-secondary mb-3" role="button">Details</a>
-
-                    </div>
-                    <div class="sec col-sm-12 col-md-4 col-lg-3">
-
-                        <div class="row ">
-
-                            <div class="col-6">
-                                <h3 class="mt-5">Digital Marketing
-                                </h3>
-                            </div>
-                            <div class="col-6">
-                                <img src="gd.png" alt="" class="image1">
-                            </div>
-                        </div>
-                        <p>Short description for the ones who look for something new. Short description for the ones who
-                            look for something new.</p>
-                        <a class="btn btn-secondary mb-3" role="button">Details</a>
-                    </div>
+                <div class="carousel-item">
+                    <img class="img-fluid hero-image" src="pic3.jpg" alt="">
                 </div>
             </div>
-        </section>
 
-        <section class="section2" id="features">
-            <div class="container">
-                <h2 class="title text-center mt-4"> Featured Works </h2>
-                <p>Stop wasting time and money designing and managing a website that doesn’t get results. Happiness
-                    guaranteed!</p>
-                <div class="row">
-                    <div class="col-12 col-md-4 col-lg-4">
+            <a href="#demo1" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#demo2" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+
+        <!-- Login/Signup Modal Starts -->
+        <div class="modal fade" id="myModal">
+
+            <div class="modal-dialog">
+                
+                <div class="modal-content">
+                    <!-- <div class="bs-example bs-example-tabs"> -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="tab-style login-shadow active"><a href="#signin" aria-controls="signin" data-toggle="tab" role="tab">Log In</a></li>
+                            <li role="presentation" class=" tab-style "><a href="#signup" aria-controls="signup" data-toggle="tab" role="tab">Sign Up</a></li>
+    
+                        </ul>
+                    <!-- </div> -->
+                    <div class="modal-body">
+
+                        
+
+                        <div class="tab-content">
+
+                            <div role="tabpanel" class="tab-pane active" id="signin" >
+                                <form class="form-horizontal">
+                                    <!-- Sign In Field Set -->
+                                    <fieldset>
+                                        <!-- sign in form -->
+                                        <div class="group">
+                                            <input type="text" required="" class="input">
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label for="date" class="label">Email address</label>
+                                        </div>
+                                        <!-- password -->
+                                        <div class="group">
+                                            <input type="password" class="input" required="">
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label for="date" class="label">Password</label>
+                                        </div>
+                                        <em>minimum 6 characters</em>
+
+                                        <!-- <div class="forgot-link">
+                                            <a href="#forgot" data-toggle="modal" data-target="#forgot-password">I
+                                                forgot my password</a>
+                                        </div> -->
+                                        <!-- button -->
+                                        <div class="control-group">
+                                            <label for="signin" class="control-label"></label>
+                                            <div class="controls">
+                                                <button id="signin" name="signin" class="btn btn-primary btn-block">Log
+                                                    In</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane" id="signup">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <!-- signup form -->
+                                        <div class="group">
+                                            <input type="text" class="input" required="">
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label for="date" class="label">First Name</label>
+                                        </div>
+
+                                        <div class="group">
+                                            <input type="text" class="input" required="">
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label for="date" class="label">Last Name</label>
+
+                                            <div class="group">
+                                                <input type="text" class="input" required="">
+                                                <span class="highlight"></span>
+                                                <span class="bar"></span>
+                                                <label for="date" class="label">Email</label>
+
+                                                <div class="group">
+                                                    <input type="text" class="input" required="">
+                                                    <span class="highlight"></span>
+                                                    <span class="bar"></span>
+                                                    <label for="date" class="label">Password</label>
+
+                                                    <div class="control-group">
+                                                        <label for="confirmsignup" class="control-label"></label>
+                                                        <div class="controls">
+                                                            <button id="confirmsignup" name="confirmsignup"
+                                                                class="btn btn-primary btn-block">Sign up</button>
+                                                        </div>
+                                                    </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section-->
+
+    <section class="section1" id="services">
+        <div class="container-fluid">
+
+            <div class="section-title text-center pb-10">
+                <h1 class="pt-3">Our Services</h1>
+                <P>Stop wasting time and money designing and managing a website that doesn’t get results. Happiness
+                    guaranteed!</P>
+            </div>
+
+            <div class="cent row pb-5">
+
+                <div class="sec col-sm-6 col-6 col-md-4 col-lg-3">
+
+
+                    <div class="wrapper mt-5 mt-md-0 p-4">
+
+                        <div class="text-center ">
+                            <h3 class="">Graphics design</h3>
+                        </div>
+
+                        <img src="gd.png" alt="" class="servicesImage my-4">
+
+                        <p>Short description for the ones who look for something new. Short description for the ones who
+                            look for something new.</p>
+
+                        <button class="btn btn-secondary mb-3" role="button">Details</button>
+                    </div>
+
+                </div>
+
+                <div class="sec col-sm-6 col-6 col-md-4 col-lg-3">
+
+                    <div class="wrapper mt-5 mt-md-0 p-4">
+
+                        <div class="text-center ">
+                            <h3 class="">Graphics design</h3>
+                        </div>
+                        <img src="gd.png" alt="" class="servicesImage my-4">
+                        <p>Short description for the ones who look for something new. Short description for the ones who
+                            look for something new.</p>
+
+                        <button class="btn btn-secondary mb-3" role="button">Details</button>
+                    </div>
+
+                </div>
+                <div class="sec col-sm-6 col-6 col-md-4 col-lg-3">
+
+                    <div class="wrapper mt-5 mt-md-0 p-4">
+
+                        <div class="text-center ">
+                            <h3 class="">Graphics design</h3>
+                        </div>
+                        <img src="gd.png" alt="" class="servicesImage my-4">
+
+                        <p>Short description for the ones who look for something new. Short description for the ones who
+                            look for something new.</p>
+
+                        <button class="btn btn-secondary mb-3" role="button">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section Starts -->
+    <section class="section2" id="features">
+        <div class="container px-0">
+            <h2 class="title text-center mt-4"> Featured Works </h2>
+            <p>Stop wasting time and money designing and managing a website that doesn’t get results. Happiness
+                guaranteed!</p>
+            <div class="row px-0 mt-5">
+
+                <div class="col-md-3 col-lg-3 pl-0">
+                    <div class="portfolio-menu text-center mt-4">
                         <ul>
                             <li class="button btn-lg btn-primary" style="margin-bottom: 10px;">All Work </li>
                             <li class="button btn-lg btn-primary" style="margin-bottom: 10px;">Branding </li>
@@ -171,221 +284,232 @@
 
                         </ul>
                     </div>
-
-                    <div class="image-column col-12 col-md-8 col-lg-8 m-5 m-md-0">
-                        <!-- <div class="container"> -->
-                            <div class="row ">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                   
-                                        <img src="pic/11.jpeg" class="img-fluid img-thumbnail" style="width: 100%; height: 300px;">
-                                        
-                                   
-                                </div>
-
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    
-                                        <img src="pic/12.jpeg" class="img-fluid img-thumbnail"
-                                            style="width: 100%; height: 300px;">
-                                    
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    
-                                        <img src="pic/13.jpeg" class="img-fluid img-thumbnail"
-                                            style="width: 100%; height: 300px;">
-                                    
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    
-                                        <img src="pic/14.jpeg" class="img-fluid img-thumbnail"
-                                            style="width: 100%; height: 300px;">
-                                    
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    
-                                        <img src="pic/15.jpeg" class="img-fluid img-thumbnail"
-                                            style="width: 100%; height: 300px;">
-                                    
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    
-                                        <img src="pic/16.jpeg" class="img-fluid img-thumbnail"
-                                            style="width: 100%; height: 300px;">
-                                    
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    
-                                        <img src="pic/17.jpeg" class="img-fluid img-thumbnail"
-                                            style="width: 100%; height: 300px;">
-                                    
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    
-                                        <img src="pic/18.jpeg" class="img-fluid img-thumbnail"
-                                            style="width: 100%; height: 300px;">
-                                    
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    
-                                        <img src="pic/19.jpeg" class="img-fluid img-thumbnail"
-                                            style="width: 100%; height: 300px;">
-                                    
-                                </div>
-
-                            </div>
-                        <!-- </div> -->
-                    </div>
                 </div>
-            </div>
-            </div>
-        </section>
 
-        <section class="section3" id="price">
-            <div class="container">
-                <h2 class="title text-center mt-3 pt-4"> Pricing Plan </h2>
-                <p>Stop wasting time and money designing and managing a website that doesn’t get results. Happiness
-                    guaranteed!</p>
+                <!-- <div class=" col-12 col-md-4 col-lg-4"> -->
+                <!-- <div class="container"> -->
+                <div class="col-md-9 col-lg-9">
 
-                <div class="cent row">
+                    <div class="row no-gutters mt-50">
 
-                    <div class="sec1 col-sm-3 col-md-3">
+                        <div class="col-sm-6 col-lg-4">
 
-                        <div class="row">
-                            <div class="col-12">
-                                <img src="gd.png" alt="" class="image2 mt-3 ml-4">
-                            </div>
-                            <h3 class="mt-4">Basic</h3>
+                            <img src="pic/11.jpeg" class="img-fluid img-thumbnail">
 
                         </div>
-                        <p>$ 399/month</p>
+
+                        <div class="col-sm-6 col-lg-4">
+
+                            <img src="pic/12.jpeg" class="img-fluid img-thumbnail">
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+
+                            <img src="pic/13.jpeg" class="img-fluid img-thumbnail">
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+
+                            <img src="pic/14.jpeg" class="img-fluid img-thumbnail">
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+
+                            <img src="pic/15.jpeg" class="img-fluid img-thumbnail">
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+
+                            <img src="pic/16.jpeg" class="img-fluid img-thumbnail">
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+
+                            <img src="pic/17.jpeg" class="img-fluid img-thumbnail">
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+
+                            <img src="pic/18.jpeg" class="img-fluid img-thumbnail">
+
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+
+                            <img src="pic/19.jpeg" class="img-fluid img-thumbnail">
+
+                        </div>
+
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Price Section Starts -->
+    <section class="section3" id="price">
+        <div class="container">
+            <h2 class="title text-center mt-3 pt-4"> Pricing Plan </h2>
+            <p>Stop wasting time and money designing and managing a website that doesn’t get results. Happiness
+                guaranteed!</p>
+
+            <div class="cent row">
+
+                <div class="sec1 col-sm-3 col-md-3">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="gd.png" alt="" class="image2 mt-3 ml-4">
+                        </div>
+                        <h3 class="mt-4">Basic</h3>
+
+                    </div>
+                    <p>$ 399/month</p>
+                    <div class="col text-center">
+
+                        <button class="btn btn-secondary btn-default">Details</button>
+                    </div>
+                </div>
+
+                <div class="sec1 col-sm-3 col-md-3">
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <img src="gd.png" alt="" class="image2 mt-3 ml-4">
+                        </div>
+                        <h3 class="mt-4">Pro</h3>
+                        <p>$ 699/month</p>
                         <div class="col text-center">
 
                             <button class="btn btn-secondary btn-default">Details</button>
                         </div>
-                    </div>
-
-                    <div class="sec1 col-sm-3 col-md-3">
-
-                        <div class="row">
-
-                            <div class="col-12">
-                                <img src="gd.png" alt="" class="image2 mt-3 ml-4">
-                            </div>
-                            <h3 class="mt-4">Pro</h3>
-                            <p>$ 699/month</p>
-                            <div class="col text-center">
-
-                                <button class="btn btn-secondary btn-default">Details</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="sec1 col-sm-3 col-md-3">
-                        <div class="row">
-                            <div class="col-12">
-                                <img src="gd.png" alt="" class="image2 mt-3 ml-4">
-                                <h3 class="mt-4">Enterprise</h3>
-                                <p>$ 699/month</p>
-
-                                <div class="col text-center">
-
-                                    <button class="btn btn-secondary">Details</button>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="section4" id="about">
-            <!-- <div class="container"> -->
-                <div class="row">
-                <div class="col-12 col-lg-6 col-md-6">
+                <div class="sec1 col-sm-3 col-md-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="gd.png" alt="" class="image2 mt-3 ml-4">
+                            <h3 class="mt-4">Enterprise</h3>
+                            <p>$ 699/month</p>
+
+                            <div class="col text-center">
+
+                                <button class="btn btn-secondary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Starts -->
+    <section class="section4" id="about">
+        <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-6">
                 <h2 class="title text-center mt-5 pb-4"> Frequently Asked Questions About Our Site</h2>
 
                 <div class="accordion  ml-4" id="accordionex">
-                   
-                <div class="accordion-item">
-                    <div class="accordion-header" id="headingOne">
-                      
-                        <button class="accordion-button  ml-" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Frequently Asked Question One
-                        </button>
-                      
-                    </div>
-                
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.                      
-                    </div>
-                    </div>
-                  </div>
-                
-                  <div class="accordion-item">
-                    <div class="accordion-header" id="headingTwo">
-                      
-                        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Frequently Asked Question Two
-                        </button>
-                      
-                    </div>
-                
-                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.                      
-                    </div>
-                    </div>
-                  </div>
 
-                  <div class="accordion-item">
-                    <div class="accordion-header" id="headingThree">
-                      
-                        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Frequently Asked Question Three
-                        </button>
-                      
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingOne">
+
+                            <button class="accordion-button  ml-" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Frequently Asked Question One
+                            </button>
+
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum
+                                non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.
+                            </div>
+                        </div>
                     </div>
-                
-                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.                      
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingTwo">
+
+                            <button class="accordion-button" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Frequently Asked Question Two
+                            </button>
+
+                        </div>
+
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum
+                                non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingThree">
+
+                            <button class="accordion-button" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Frequently Asked Question Three
+                            </button>
+
+                        </div>
+
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Morbi vehicula arcu et pellentesque tincidunt. Nunc ligula nulla, lobortis a elementum
+                                non, vulputate ut arcu. Aliquam erat volutpat. Nullam lacinia felis.
+                            </div>
+                        </div>
                     </div>
-                  </div>
 
                 </div>
             </div>
 
             <div class="col-12 col-lg-6 col-md-6 ">
-                    <img src="pic.jpg" class=" image img-fluid text-center">
+                <img src="pic.jpg" class=" image img-fluid text-center">
             </div>
         </div>
-        </section>
+    </section>
 
-        <section class="section5" id="team">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
+    <!-- Clients Section -->
+    <section class="section5" id="team">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
                 <h2 class="text-center">What Clients Says About Us</h2>
-            <p>Duis et metus et massa tempus lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas ultricies, orci molestie blandit interdum.</p>
-            <p>ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci molestie blandit interdum.</p>
-        </div>
-
-        
+                <p>Duis et metus et massa tempus lacinia. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Maecenas ultricies, orci molestie blandit interdum.</p>
+                <p>ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci molestie blandit
+                    interdum.</p>
             </div>
-        </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="custom.js"></script>
 
 </body>
 
